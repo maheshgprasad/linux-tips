@@ -6,3 +6,4 @@
 3. Save and Quit
 4. You are done. 
 You now get to see the ip address of your Virtual Machine each time you turn it on.
+![Login Screen on VM](https://github.com/maheshgprasad/linux-tips/blob/master/Azrael_1.PNG)
