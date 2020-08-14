@@ -1,6 +1,6 @@
 # linux-tips
 
-# Get IP Address information on you Linux Virtual Machine Terminal
+# Get IP Address information on your Linux Virtual Machine Terminal
 1. as sudo open the file /etc/issue using vi / nano / vim editor
 2. now append the line \4 {your_ethernet_interface_name} | for example: \4{enp0s3} 
 3. Save and Quit
