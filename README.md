@@ -18,3 +18,6 @@ grep - c "*search-term*"  /path/to/file
 for i in dir1 dir2 dir3 dir4; do mkdir /path/where/you/need/new/directories $i; done
 
 || simplified. for i in dir1 dir2 dir3 dir4; do mkdir $i; done
+
+# To Create Multiple Files in a directory using  for loop.
+for i in file1 file2 file3 file4; do touch $i; done
