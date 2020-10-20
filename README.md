@@ -9,7 +9,7 @@ You now get to see the ip address of your Virtual Machine each time you turn it 
 ![Login Screen on VM](https://github.com/maheshgprasad/linux-tips/blob/master/Azrael_1.PNG)
 
 # To find something within a file recursively using " grep  " Command
-grep - r "<search-term>"  /path/to/file
+grep - r "*search-term*"  /path/to/file
   
 # To count the number of times a search term appears within a file.
-grep - c "<search-term>"  /path/to/file
+grep - c "*search-term*"  /path/to/file
