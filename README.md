@@ -16,4 +16,5 @@ grep - c "*search-term*"  /path/to/file
 
 # To Create Multiple directories using a for loop.
 for i in dir1 dir2 dir3 dir4; do mkdir /path/where/you/need/new/directories $i; done
-// simplified. for i in dir1 dir2 dir3 dir4; do mkdir $i; done
+
+|| simplified. for i in dir1 dir2 dir3 dir4; do mkdir $i; done
