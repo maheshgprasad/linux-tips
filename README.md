@@ -23,14 +23,13 @@ for i in dir1 dir2 dir3 dir4; do mkdir /path/where/you/need/new/directories $i; 
 for i in file1 file2 file3 file4; do touch $i; done
 
 #Useful Rsync flags
-!/bin/bash
-set -x
- -I, --ignore-times
-  Normally rsync will skip any files that are already the same size and have the same modification timestamp.
-  This option turns off this lqquick checkrq behavior, causing all files to be updated.
- -K, --keep-dirlinks
- This option causes the receiving side to treat a symlink to a directory as though it were a real directory,but only if it matches a real directory from the sender.
- Without this option, the receiver's symlink would be deleted and replaced with a real directory.
+
+-I, --ignore-times 
+Normally rsync will skip any files that are already the same size and have the same modification timestamp.
+This option turns off this lqquick checkrq behavior, causing all files to be updated.
+-K, --keep-dirlinks
+This option causes the receiving side to treat a symlink to a directory as though it were a real directory,but only if it matches a real directory from the sender.
+Without this option, the receiver's symlink would be deleted and replaced with a real directory.
 
  -r, --recursive : This tells rsync to copy directories recursively. See also --dirs (-d).
  -v, --verbose
