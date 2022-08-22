@@ -29,21 +29,24 @@ for i in file1 file2 file3 file4; do touch $i; done
 
 # Useful Rsync flags
 
-- -I, --ignore-times
+- -I  --ignore-times
   Normally rsync will skip any files that are already the same size and have the same modification timestamp.
   This option turns off this lqquick checkrq behavior, causing all files to be updated.
-- -K, --keep-dirlinks
+- -K  --keep-dirlinks
   This option causes the receiving side to treat a symlink to a directory as though it were a real directory,but only if it matches a real directory from     the sender.
   Without this option, the receiver's symlink would be deleted and replaced with a real directory.
 
-- -r, --recursive : This tells rsync to copy directories recursively. See also --dirs (-d).
-- -v, --verbose
-- -a, --archive
+- -r  --recursive : This tells rsync to copy directories recursively. See also --dirs (-d).
+- -v  --verbose
+- -a  --archive
   This is equivalent to -rlptgoD. It is a quick way of saying you want recursion and want to preserve almost everything (with -H being a notable omission).
-- -e, --rsh=COMMAND
+- -e  --rsh=COMMAND
   This option allows you to choose an alternative remote shell program to use for communication between the local and remote copies of rsync.
   Typically, rsync is configured to use ssh by default, but you may prefer to use rsh on a local network.
   If this option is used with [user@]host::module/path
-- -c, --checksum skip based on checksum, not mod-time & size
-- -t, --times preserve modification times
-- -z, --compress compress file data during the transfer
+- -c  --checksum
+  skip based on checksum, not mod-time & size
+- -t  --times
+   preserve modification times
+- -z  --compress
+   compress file data during the transfer
